@@ -1,8 +1,8 @@
 # Rich Media Notifications Kit
 
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org/)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
-[![API](https://img.shields.io/badge/API-21%2B-orange)](#)
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![API](https://img.shields.io/badge/API-21%2B-orange.svg)](#)
 
 **Rich Media Notifications Library** is an Android library that simplifies creating rich, modern notifications. Supports text, big images, GIFs (first frame with badge), video thumbnails, and full media playback controls with play/pause/next/prev actions.
 
@@ -10,7 +10,9 @@
 
 ## 📸 Preview
 
-
+<img src="app/src/main/assets/Video.gif"
+       alt="Rich Media Notification Library Demo" 
+      height="320"/>
 
 ---
 
