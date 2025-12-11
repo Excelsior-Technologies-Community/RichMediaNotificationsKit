@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context="com.ext.medianotification.MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Rich Media Notifications"
+        android:textColor="@color/primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Text Notification Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTextNotification"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="📄 Text Notification"
+        android:textSize="14sp"
+        app:cornerRadius="12dp" />
+
+    <!-- Image Notification Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnImageNotification"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="🖼️ Big Image Notification"
+        android:textSize="14sp"
+        app:cornerRadius="12dp" />
+
+    <!-- GIF Notification Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGifNotification"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="🎬 GIF Notification"
+        android:textSize="14sp"
+        app:cornerRadius="12dp" />
+
+    <!-- Video Notification Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVideoNotification"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="16dp"
+        android:text="🎥 Video Thumbnail Notification"
+        android:textSize="14sp"
+        app:backgroundTint="@color/accent"
+        app:cornerRadius="12dp" />
+
+    <!-- Media Playback Notification Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMediaNotification"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:paddingVertical="16dp"
+        android:text="🎵 Media Playback Notification"
+        android:textSize="14sp"
+        app:backgroundTint="@color/accent"
+        app:cornerRadius="12dp" />
+
+    <!-- Info Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="ℹ️ How to Use"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="1. Tap any button to show a notification\n2. Pull down the notification to see expanded view\n3. Media notification has working controls\n4. GIFs show first frame (Android limitation)\n5. Video shows auto-generated thumbnail"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Features List -->
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:cardCornerRadius="12dp"-->
+    <!--            app:cardElevation="2dp"-->
+    <!--            android:layout_marginTop="16dp">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:padding="16dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="✨ Library Features"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:layout_marginBottom="8dp" />-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="✅ BigPictureStyle support\n✅ MediaStyle with controls\n✅ Async thumbnail loading\n✅ Glide caching integration\n✅ 50+ XML attributes\n✅ Kotlin Coroutines\n✅ API 21+ support"-->
+    <!--                    android:textSize="14sp"-->
+    <!--                    android:lineSpacingExtra="4dp" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--        </androidx.cardview.widget.CardView>-->
+
+</LinearLayout>

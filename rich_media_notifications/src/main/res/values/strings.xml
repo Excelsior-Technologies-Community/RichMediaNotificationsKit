@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default notification channel names -->
+    <string name="rmn_default_channel_name">Rich Media Notifications</string>
+    <string name="rmn_default_channel_description">Notifications with images, videos, and media controls</string>
+    <string name="rmn_media_channel_name">Media Playback</string>
+    <string name="rmn_media_channel_description">Music and video playback controls</string>
+
+    <!-- Action button labels -->
+    <string name="rmn_action_play">Play</string>
+    <string name="rmn_action_pause">Pause</string>
+    <string name="rmn_action_next">Next</string>
+    <string name="rmn_action_prev">Previous</string>
+    <string name="rmn_action_stop">Stop</string>
+
+    <!-- GIF badge text -->
+    <string name="rmn_gif_badge_default">GIF</string>
+
+    <!-- Error messages -->
+    <string name="rmn_error_thumbnail_load">Unable to load media thumbnail</string>
+    <string name="rmn_error_video_frame">Unable to extract video frame</string>
+</resources>

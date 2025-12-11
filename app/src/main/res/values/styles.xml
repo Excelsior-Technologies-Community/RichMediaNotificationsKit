@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============ CUSTOM NOTIFICATION STYLES ============ -->
+
+    <style name="AppNotificationStyle">
+
+        <!-- Notification appearance -->
+        <item name="rmn_notification_icon">@drawable/ic_notification</item>
+        <item name="rmn_notification_color">@color/primary</item>
+
+        <!-- Image settings -->
+        <item name="rmn_bigImageMaxHeight">600dp</item>
+        <item name="rmn_bigImageMaxWidth">1024dp</item>
+        <item name="rmn_placeholderDrawable">@drawable/rmn_placeholder_image</item>
+
+        <!-- GIF settings -->
+        <item name="rmn_gif_showBadge">true</item>
+        <item name="rmn_gif_badgeText">GIF</item>
+        <item name="rmn_gif_autoplay">false</item>
+
+        <!-- Video settings -->
+        <item name="rmn_video_thumbnailTimeMs">0</item>
+        <item name="rmn_video_showPlayIcon">true</item>
+        <item name="rmn_videoPlaceholderDrawable">@drawable/rmn_placeholder_video</item>
+
+        <!-- Channel settings -->
+        <item name="rmn_channel_importance">importance_default</item>
+        <item name="rmn_channel_enableSound">true</item>
+        <item name="rmn_channel_enableVibration">true</item>
+        <item name="rmn_channel_showBadge">true</item>
+
+        <!-- Behavior settings -->
+        <item name="rmn_autoCancel">true</item>
+        <item name="rmn_showWhen">true</item>
+        <item name="rmn_priority">priority_default</item>
+    </style>
+
+    <!-- High priority notification style -->
+    <style name="AppNotificationStyle.HighPriority">
+        <item name="rmn_channel_importance">importance_high</item>
+        <item name="rmn_priority">priority_high</item>
+        <item name="rmn_channel_enableSound">true</item>
+        <item name="rmn_channel_enableVibration">true</item>
+    </style>
+
+    <!-- Low priority notification style -->
+    <style name="AppNotificationStyle.LowPriority">
+        <item name="rmn_channel_importance">importance_low</item>
+        <item name="rmn_priority">priority_low</item>
+        <item name="rmn_channel_enableSound">false</item>
+        <item name="rmn_channel_enableVibration">false</item>
+    </style>
+
+    <!-- Media notification style -->
+    <style name="AppNotificationStyle.Media">
+        <item name="rmn_show_actions">true</item>
+        <item name="rmn_media_showSeekBar">false</item>
+        <item name="rmn_media_compactShowPlayPause">true</item>
+        <item name="rmn_media_compactShowNext">true</item>
+        <item name="rmn_media_compactShowPrev">false</item>
+        <item name="rmn_ongoing">true</item>
+        <item name="rmn_autoCancel">false</item>
+    </style>
+
+</resources>

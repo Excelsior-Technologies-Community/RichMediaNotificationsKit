@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rich Media Notifications Custom Attributes -->
+
+    <declare-styleable name="RichMediaNotification">
+
+        <!-- ==================== NOTIFICATION APPEARANCE ==================== -->
+
+        <!-- Small icon shown in status bar -->
+        <attr name="rmn_notification_icon" format="reference" />
+
+        <!-- Accent color for notification (used in various UI elements) -->
+        <attr name="rmn_notification_color" format="color" />
+
+        <!-- Title text size -->
+        <attr name="rmn_title_textSize" format="dimension" />
+
+        <!-- Message/content text size -->
+        <attr name="rmn_message_textSize" format="dimension" />
+
+        <!-- Maximum height for big picture style images (in dp) -->
+        <attr name="rmn_bigImageMaxHeight" format="dimension" />
+
+        <!-- Maximum width for big picture style images (in dp) -->
+        <attr name="rmn_bigImageMaxWidth" format="dimension" />
+
+        <!-- Default placeholder drawable for image loading -->
+        <attr name="rmn_placeholderDrawable" format="reference" />
+
+        <!-- Placeholder drawable specifically for video thumbnails -->
+        <attr name="rmn_videoPlaceholderDrawable" format="reference" />
+
+        <!-- Placeholder drawable for audio/media playback -->
+        <attr name="rmn_audioPlaceholderDrawable" format="reference" />
+
+        <!-- Large icon size for notifications (in dp) -->
+        <attr name="rmn_largeIconSize" format="dimension" />
+
+        <!-- ==================== GIF BEHAVIOR ==================== -->
+
+        <!-- Enable automatic GIF animation detection and handling -->
+        <attr name="rmn_gif_autoplay" format="boolean" />
+
+        <!-- Show "GIF" badge on GIF thumbnails -->
+        <attr name="rmn_gif_showBadge" format="boolean" />
+
+        <!-- Text to display on GIF badge -->
+        <attr name="rmn_gif_badgeText" format="string" />
+
+        <!-- ==================== AUTO THUMBNAIL LOADER ==================== -->
+
+        <!-- Enable automatic thumbnail loading from URLs -->
+        <attr name="rmn_autothumbnail_enabled" format="boolean" />
+
+        <!-- Placeholder to show while thumbnail is loading -->
+        <attr name="rmn_autothumbnail_placeholder" format="reference" />
+
+        <!-- Cache duration for thumbnails (in hours) -->
+        <attr name="rmn_autothumbnail_cacheDuration" format="integer" />
+
+        <!-- Maximum retries for failed thumbnail downloads -->
+        <attr name="rmn_autothumbnail_maxRetries" format="integer" />
+
+        <!-- Timeout for thumbnail download (in seconds) -->
+        <attr name="rmn_autothumbnail_timeout" format="integer" />
+
+        <!-- ==================== VIDEO BEHAVIOR ==================== -->
+
+        <!-- Extract video frame at specific time (in milliseconds) -->
+        <attr name="rmn_video_thumbnailTimeMs" format="integer" />
+
+        <!-- Show play icon overlay on video thumbnails -->
+        <attr name="rmn_video_showPlayIcon" format="boolean" />
+
+        <!-- Play icon drawable for video thumbnails -->
+        <attr name="rmn_video_playIconDrawable" format="reference" />
+
+        <!-- ==================== NOTIFICATION CHANNEL ==================== -->
+
+        <!-- Notification channel ID (must be unique per channel) -->
+        <attr name="rmn_channel_id" format="string" />
+
+        <!-- Notification channel name (user-visible) -->
+        <attr name="rmn_channel_name" format="string" />
+
+        <!-- Notification channel description -->
+        <attr name="rmn_channel_description" format="string" />
+
+        <!-- Notification channel importance level -->
+        <attr name="rmn_channel_importance" format="enum">
+            <enum name="importance_min" value="1" />       <!-- IMPORTANCE_MIN -->
+            <enum name="importance_low" value="2" />       <!-- IMPORTANCE_LOW -->
+            <enum name="importance_default" value="3" />   <!-- IMPORTANCE_DEFAULT -->
+            <enum name="importance_high" value="4" />      <!-- IMPORTANCE_HIGH -->
+            <enum name="importance_max" value="5" />       <!-- IMPORTANCE_MAX -->
+        </attr>
+
+        <!-- Enable notification sound -->
+        <attr name="rmn_channel_enableSound" format="boolean" />
+
+        <!-- Enable notification vibration -->
+        <attr name="rmn_channel_enableVibration" format="boolean" />
+
+        <!-- Enable notification LED lights -->
+        <attr name="rmn_channel_enableLights" format="boolean" />
+
+        <!-- Show notification badge on app icon -->
+        <attr name="rmn_channel_showBadge" format="boolean" />
+
+        <!-- ==================== MEDIA PLAYBACK CONTROLS ==================== -->
+
+        <!-- Show action buttons in notification -->
+        <attr name="rmn_show_actions" format="boolean" />
+
+        <!-- Icon for Play action button -->
+        <attr name="rmn_action_icon_play" format="reference" />
+
+        <!-- Icon for Pause action button -->
+        <attr name="rmn_action_icon_pause" format="reference" />
+
+        <!-- Icon for Next action button -->
+        <attr name="rmn_action_icon_next" format="reference" />
+
+        <!-- Icon for Previous action button -->
+        <attr name="rmn_action_icon_prev" format="reference" />
+
+        <!-- Icon for Stop action button -->
+        <attr name="rmn_action_icon_stop" format="reference" />
+
+        <!-- Show seek bar in media notifications (API 29+) -->
+        <attr name="rmn_media_showSeekBar" format="boolean" />
+
+        <!-- Show play/pause button in compact view -->
+        <attr name="rmn_media_compactShowPlayPause" format="boolean" />
+
+        <!-- Show next button in compact view -->
+        <attr name="rmn_media_compactShowNext" format="boolean" />
+
+        <!-- Show previous button in compact view -->
+        <attr name="rmn_media_compactShowPrev" format="boolean" />
+
+        <!-- ==================== NOTIFICATION BEHAVIOR ==================== -->
+
+        <!-- Auto-cancel notification when tapped -->
+        <attr name="rmn_autoCancel" format="boolean" />
+
+        <!-- Make notification ongoing (cannot be dismissed) -->
+        <attr name="rmn_ongoing" format="boolean" />
+
+        <!-- Notification priority (for pre-API 26 devices) -->
+        <attr name="rmn_priority" format="enum">
+            <enum name="priority_min" value="-2" />      <!-- PRIORITY_MIN -->
+            <enum name="priority_low" value="-1" />      <!-- PRIORITY_LOW -->
+            <enum name="priority_default" value="0" />   <!-- PRIORITY_DEFAULT -->
+            <enum name="priority_high" value="1" />      <!-- PRIORITY_HIGH -->
+            <enum name="priority_max" value="2" />       <!-- PRIORITY_MAX -->
+        </attr>
+
+        <!-- Show notification timestamp -->
+        <attr name="rmn_showWhen" format="boolean" />
+
+        <!-- Use chronometer instead of timestamp -->
+        <attr name="rmn_usesChronometer" format="boolean" />
+
+        <!-- Notification timeout (auto-dismiss after ms, 0 = no timeout) -->
+        <attr name="rmn_timeoutAfter" format="integer" />
+
+        <!-- ==================== ADVANCED FEATURES ==================== -->
+
+        <!-- Enable notification grouping -->
+        <attr name="rmn_groupKey" format="string" />
+
+        <!-- Make this notification a group summary -->
+        <attr name="rmn_groupSummary" format="boolean" />
+
+        <!-- Sort key for notification ordering -->
+        <attr name="rmn_sortKey" format="string" />
+
+        <!-- Notification category (for system handling) -->
+        <attr name="rmn_category" format="enum">
+            <enum name="category_call" value="0" />
+            <enum name="category_message" value="1" />
+            <enum name="category_email" value="2" />
+            <enum name="category_event" value="3" />
+            <enum name="category_promo" value="4" />
+            <enum name="category_alarm" value="5" />
+            <enum name="category_progress" value="6" />
+            <enum name="category_social" value="7" />
+            <enum name="category_error" value="8" />
+            <enum name="category_transport" value="9" />
+            <enum name="category_system" value="10" />
+            <enum name="category_service" value="11" />
+            <enum name="category_recommendation" value="12" />
+            <enum name="category_status" value="13" />
+        </attr>
+
+        <!-- Visibility on lockscreen -->
+        <attr name="rmn_visibility" format="enum">
+            <enum name="visibility_secret" value="-1" />   <!-- VISIBILITY_SECRET -->
+            <enum name="visibility_private" value="0" />   <!-- VISIBILITY_PRIVATE -->
+            <enum name="visibility_public" value="1" />    <!-- VISIBILITY_PUBLIC -->
+        </attr>
+
+    </declare-styleable>
+
+</resources>
