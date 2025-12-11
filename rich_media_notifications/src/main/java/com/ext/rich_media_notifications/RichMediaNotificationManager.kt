@@ -244,9 +244,8 @@ class RichMediaNotificationManager private constructor(private val context: Cont
          */
         suspend fun build(): Notification = withContext(Dispatchers.IO) {
             // Ensure channel exists
-            if (channelId == NotificationUtils.DEFAULT_CHANNEL_ID) {
-                NotificationUtils.createNotificationChannel(context, channelId)
-            }
+            NotificationUtils.createNotificationChannel(context, channelId)
+
 
             // Determine notification type and build accordingly
             when {
