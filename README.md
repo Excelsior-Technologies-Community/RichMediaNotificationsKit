@@ -3,6 +3,7 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![API](https://img.shields.io/badge/API-21%2B-orange.svg)](#)
+[![](https://jitpack.io/v/Excelsior-Technologies-Community/RichMediaNotificationsKit.svg)](https://jitpack.io/#Excelsior-Technologies-Community/RichMediaNotificationsKit)
 
 **Rich Media Notifications Library** is an Android library that simplifies creating rich, modern notifications. Supports text, big images, GIFs (first frame with badge), video thumbnails, and full media playback controls with play/pause/next/prev actions.
 
@@ -47,7 +48,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.YourUsername:RichMediaNotifications:1.0.0'  
+    implementation 'com.github.Excelsior-Technologies-Community:RichMediaNotificationsKit:1.0.0'  
     implementation 'com.github.bumptech.glide:glide:4.16.0'  // Required for thumbnail loading
 }
 ```
@@ -58,7 +59,7 @@ Add required permissions in `AndroidManifest.xml`:
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" /> <!-- API 34+ -->
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" /> 
 ```
 
 ---
