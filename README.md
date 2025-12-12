@@ -48,7 +48,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.Excelsior-Technologies-Community:RichMediaNotificationsKit:1.0.0'  
+    implementation 'com.github.Excelsior-Technologies-Community:RichMediaNotificationsKit:1.0.2'  
     implementation 'com.github.bumptech.glide:glide:4.16.0'  // Required for thumbnail loading
 }
 ```
